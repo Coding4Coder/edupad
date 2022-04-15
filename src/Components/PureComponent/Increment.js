@@ -1,8 +1,8 @@
 
 
 import React, { useState } from 'react';
-import { MainContainer } from '../Styles/Header.style';
 import ToDo from './ToDo';
+import { MainContainer, PageHeading } from '../Styles/Global.style';
 
 const Increment = () => {
     const [counter, setCounter] = useState(0);
@@ -13,12 +13,15 @@ const Increment = () => {
     }
 
   return (
+    <>
+    <PageHeading>Pure Component</PageHeading>
     <MainContainer>
       <ToDo todoUsersData={todo} />
       <hr />
      Increment : {counter}<br />
      <button className="btn btn-primary" onClick={incrementClick}>+</button>
     </MainContainer>
+    </>
   )
 }
 
