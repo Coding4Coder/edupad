@@ -1,0 +1,38 @@
+
+
+        .dropdown-menu{
+            background: #373737 !important;
+        }
+        .dropdown-divider{
+            color: aliceblue;
+        }
+        .bg-dark{
+            background: #373737 !important;
+           
+        }
+        .navbar {
+            height: 6.3rem;
+            padding: .3rem 2rem !important;
+           
+        }
+        .navbar-brand{
+            font-size: 1.7rem !important;
+            text-align: center;
+        }
+        #responsive-navbar-nav{
+            justify-content:flex-end;
+           
+        }
+    @media (max-width: 992px){
+             #responsive-navbar-nav{
+                justify-content:flex-end;
+              
+             }
+             .navbar {
+                height: auto;
+                padding: 2rem;
+            }
+}
+.test{
+    background: #037973;
+}
