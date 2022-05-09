@@ -38,7 +38,13 @@ export const MainContainer = styled.section `
                 width:200px;
                 margin:0 0 40px 0;
                 img{
-                    width:200px;
+                    width:175px;
+                    height:220px;
+                }
+                .card-title{
+                    font-size: 1.2rem;
+                    font-weight:bold;
+                    text-transform:capitalize;
                 }
                 .card-title, .card-text{
                     font-size: 1rem;
@@ -87,4 +93,39 @@ export const CityName = styled.div `
         border-bottom:1px solid #e2e2e2;
         padding:.5rem;
     }
-`
+`;
+
+export const SearchBox = styled.input`
+    width: 300px;
+    height:50px;
+    border-radius:35px;
+    background:#e2e2e2;
+    padding:.5rem;
+    margin:1rem auto;
+    display: block;
+    border:2px solid #c2c2c2;
+    padding-left:20px;
+    font-size:1.2rem;
+`;
+
+export const CovidContainer = styled.div `
+display:flex;
+flex-wrap:wrap;
+    .item{
+        flex-grow:1;
+        background:#d0e6e5;
+        padding:.23rem;
+        border-top:1px solid #888;
+        width:25%;
+        font-size:1rem;
+    }
+    .bdr-r{
+        border-right:1px solid #888;
+    }
+    &.header{
+                .item{
+                background:#5ca9a5;
+                color:#fff;
+            }
+    }
+`;
